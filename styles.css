@@ -1,0 +1,39 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Container to center the image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Responsive image */
+.image-container img {
+    max-width: 70%; /* Adjusted to be more responsive */
+    height: auto;
+    display: block;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 80%; /* Increase max-width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        max-width: 200%; /* Full width on very small screens */
+    }
+}
