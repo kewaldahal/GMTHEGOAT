@@ -6,6 +6,7 @@
 }
 
 body, html {
+    background-color: rgb(255, 255, 255);
     height: 100%;
     font-family: Arial, sans-serif;
 }
@@ -20,20 +21,17 @@ body, html {
 
 /* Responsive image */
 .image-container img {
-    max-width: 70%; /* Adjusted to be more responsive */
+    max-width: 50%; /* Adjusted to be more responsive */
     height: auto;
     display: block;
 }
 
-/* Media queries for different screen sizes */
-@media (max-width: 768px) {
-    .image-container img {
-        max-width: 80%; /* Increase max-width on smaller screens */
-    }
+img{
+    transition: 1s;
+    border-radius: 20px;
 }
 
-@media (max-width: 480px) {
-    .image-container img {
-        max-width: 200%; /* Full width on very small screens */
-    }
-}
+img:hover {
+    box-shadow: 0 0 600px #0f1f34;
+    transform: scale(120%);
+  }
